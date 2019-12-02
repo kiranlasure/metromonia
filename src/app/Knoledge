@@ -1,0 +1,187 @@
+1. suppose there are n number of employee in application n we have to write query for 
+   update the salary of each employee by 20%.
+
+   update employee
+   set salary = salary + (salary * 20.0/ 100);
+
+2. What is ngSwitch and how we can use it.
+3. How many ways we can access data from sever n put it into JSON file.
+4. suppose there are 2 services n data also different how we call this on one component.
+5. How component can communicate with each other.
+6. What is Service ?
+7. what is event emiter ?
+7. component Life cycle in Angular ?
+8. JS equality operator..
+9. VIMP question is HOW upload data/How receive Data.
+10. What is your previous organisation experience.
+
+   10. ==> Presently i work as Angular Developer in Mestro Intellect Private Ltd.
+           We have 6 people in my team including me. I work on Angular 7 and used 
+           HTML5. We create an UI of this Web Application In difffernt module.
+           We use git for shceduling your work.
+           We work on Metromonia project write now. In this project the user can register 
+           some of there infor upload photoes and share there profile to all over web.
+           
+           I join this organisation in october octo. to November i work on simple UI
+           project . from January till date i used Angular 7.
+
+
+Q. How do you structure your CSS and JavaScript to make it easier for other developers to work with?
+
+ ===> I organise my code stylesheet with each section for each site component. Each section has comment
+      throughout the code so other Developer can change it. 
+
+
+
+
+See We can write your business logic in service n suppose you want some info in your app. that info wants 
+share in other component depending on the requirment.
+----The best wway is a Angular Seriveces. 
+. See your local application does't have that much/ sutable/ as we wish data in there database.
+ eg. 1 Someone wants to make a webportal for whether report for this he wants a data from whole universal.
+ at that situation he don't need to put his own sensor in whole universe. 
+ --- some is already done this work n they have this information in there database. we only need to do one 
+ thing is make request for a data.
+ -- At this condition we need to communicate with service for data Retrival. in this condition for Accessing 
+ Data there are some protocol we have to use.
+ ... We can write these protocol in services fetch the data from server n then used that data in your 
+ component where you want.
+
+
+In Angular there are some steps: 
+1. Creating Service for HTTP request.
+2. Getting Responce back.
+3. Casting Responce to interface.
+  
+  ---- step 1. Like Every other Module for data accessing from server there is one module HttpClient module
+  we need to import it your module file.
+  - We make http request to the server for data.
+  - The Http request will hit web API/ Server which will fetch a data from database & it back as Http Responce.
+  - An responce from a server is called an obervable
+        step 2. Inject this module in your service as dependency.
+        step 2. make reference of This service in constructor.
+        step 3. make 1 variable in service class an asign a URL as string to that so that by using this we 
+                can access your data in future.
+        step 4. In the Get Request we use ths URL for Accessing Data
+
+    
+
+
+Q.  Explain What Is The Lazy Loading ?
+
+
+https://www.wisdomjobs.com/e-university/front-end-developer-interview-questions.html
+
+
+
+What is API ?? Application programming Interface.
+
+==> Login with the Facebook , Login with the Google,  Login with instagram
+
+
+API is code written by some other developer/ we don't care about that , how it is written, in 
+which language it is written, ...You can just use there code for your work purpose. we use this in your 
+application.
+
+Simple Example is suppose we want create your whether application we don't need to set a sattelite 
+everywhere in the world/universe n then your sensor gives you the present data time to time
+  -- where is rain/where is mansoon etc etc.
+  We don't need to do this some people are already done this we can only there API.
+  .. Some of API are free like Facebook. 
+  ...Some are paid like Google Database
+
+Error -- Access-control-origin-allow 
+
+
+
+
+
+
+    Routing - All Web Application are connected to each other using the Navigation . in HTML we use href to
+              make a hyperlink n by JavaScript we use ...Window.location.
+            -- The Angular Provides New facility it's prity easy andd without reloading its link to other 
+            page or changes the data/Navigation.
+    If we want to do Angular project using routing facility then at time of project creation the command line 
+    ask that whether we want to peform routing.
+    --- If we click to yes then it will create a separate fiel called routing.module.ts we do your logic 
+    in that file.
+
+    we have to give all routs info in route Array 
+    it takes 2 paraemeter. 1st one is path name that you want to render in url n second iss 
+    component name that we have to with.
+
+    -- soppose there are various component in your application n you perform routing on this n suppoose 
+    user give some wrong path name then we have handal such situation.
+    -- this rout are called wild car rout -- if user gives a wrong n componet will not prsent 
+    then we give to Navigation to page not found component.
+
+    step 1. create component page-not-found
+            - Give a msg - Page Not found in that component
+    step 2. Add the {path: '**', component:pagenotfoundCompponent},
+            pathe in routing.module.ts.
+            Note: wildcart route should always the last route in the configuration.
+    
+
+
+
+
+
+Angular Life Cycle Hook:   
+                          Component is initialised after the constroctor is get called.
+                - First Thing or Method called Is OnInit.
+                - After That Docheck() Method will get Called- Any changes in the browser it will get 
+                called.
+                -AfterContentInit() : It will initialised all the content which  will be injected in the view.
+                      - Which we can see in browser like text, images , table etc.
+                -AfterViewInit() : How it Can be renderd , The data assign to HTML and those things 
+                get called.
+                -AfterContentChecked(): If New Component gets Called Same process goes like for this component
+                also.
+
+                              or
+                -Every Component has a life cycle which is managed by Angular.
+                - Angular creates it, renders it, creates and renders it's Children, Check it when 
+                it's data bound properties Change, and destroyes it before it removing it from the development
+                -Angular offers lifecycle hooks that 
+
+                - First Thing that will be executed is constroctor of the particular component
+                - After that we can see the following things get executed.
+                1. ngOnChanges
+                2. ngOnInit : It it is the life cycle for that component/ This method get called after constroctor.
+                3. ngOnDestroy() : when we goes from one component and perform routing this method
+                will get executed.
+
+                4. ngAfterContetntInit(): 
+                5. ngAfterViewInit():
+
+
+    Good Morning sir, Myself Kiran i'belongs to Aurangabad, i have 1 year an Jr Front End developer in 
+    Maestro Intellect pvt ltd.
+    In my current company work 3 month on JavaScript, HTML, CSS based web Application and since last 10 month 
+    i work as Angular developer.
+    Right now I work on Matromonia project. In that project we are 6 people including me. I specially
+    work on UI development using angular in this project.
+
+
+What is you Biggests Weakness??
+-
+    I have two greatest weaknesses. The first is my inability to share responsibilities. The second is 
+    remaining patient during group projects. I want to be in control. I don’t trust others with work I
+     know I can do better. So, if I have to share a task, I lose my patience when I suspect that the
+      other person isn’t doing it right. I’ve discussed these weaknesses with my supervisor as areas 
+      I’d like to improve. We’ve set up a timeline and goals for me to achieve. I’ve enrolled in several
+       team building workshops and a volunteer group. I’m learning to let go and trust others. My
+        supervisor complimented me on my progress.
+
+Why should We Hire you ?
+
+“Well, I have all of the skills and experience that you’re looking for and I’m confident that I would 
+be a superstar in this project management role.It’s not just my background leading successful projects
+for top companies —  or my people skills, which have helped me develop great relationships with developers, vendors, and senior managers alike. But I’m also passionate about this industry and I’m driven to deliver high-quality work.”
+
+
+
+
+
+
+

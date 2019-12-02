@@ -1,0 +1,56 @@
+<!-- by default flex layout direction is row -->
+<!-- There are various alignment of flex layout like start, end , center -->
+<!-- The meaning of this line is fxLayout.xs="column" whenever very extra small device will use 
+    this portal then it get shrinks  -->
+<div fxLayout = "row" fxLayouAlign="center center" fxLayout.xs ="colomn">
+    
+    <!-- here see we use div which is block level element
+    there are 2 types elements 1st one is inline n 2nd one is block level -->
+    <div>
+        <!-- here we use ngModel n this is not our regular Module for this we have to  
+            add form module in your Module file -->
+           Enter First Number: <input type="number" placeholder="number1" [(ngModel)]="num1">
+            {{num1}}
+            <br>
+            <!-- <br> tag used to break the line -->
+            <br>
+           Enter Second Number: <input type ="number" placeholder="number2" [(ngModel)]="num2">
+           {{num2}}
+            <br> 
+            <br>
+            <button (click) = "add()">Add</button> {{result}}
+
+     </div>
+</div>
+
+
+
+<div fxLayout = "row" fxLayoutAlign = "center center" fxLayout.xs="colomn">
+    
+    <div>
+        Enter First Name: <input type="number" placeholder="number1" [(ngModel)]="num3">
+        {{num3}}
+        <br>
+        Enter Second Number: <input type = "number" placeholder="number2" [(ngModel)]="num4">
+        {{num4}}
+        <br>
+        <br>
+        <button (click) ="sub()">Sub</button>
+
+        {{Result1}}
+    </div>
+
+</div>
+
+<div>
+    <button (click)="greeting()">Hi</button>
+</div>
+
+{{Greeti}}
+
+{{todayDate}}
+
+<!-- Angular Data Binding: Angular Data binding means communication between component and view.
+    Data binding is passed from compennet to view and from view to the component.
+  -->
+

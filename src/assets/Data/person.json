@@ -1,0 +1,14 @@
+[
+    {"id": 1, "name":"Kiran", "age":24},
+    {"id": 2, "name":"Rushikesh", "age":18},
+    {"id": 3, "name":"Rahul", "age": 26},
+    {"id": 4, "name":"Dnyaneshwar", "age": 25},
+    {"id": 5, "name":"yOUVRAJ","age":24},
+    {"id": 6, "name":"Ganesh","age":21},
+    {"id": 7, "name":"Rohit", "age": 26},
+    {"id": 8, "name":"Amol", "age":27},
+    {"id": 9, "name":"Paddy", "age": 10},
+    {"id": 11, "name":"Sahil", "age":50},
+    {"id": 12, "name":"Ketan", "age":60}
+
+]

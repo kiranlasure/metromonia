@@ -1,0 +1,20 @@
+<!-- <h2> List Of Employees whose age is greter than 18</h2>
+<ul *ngFor=" let Employee of person">
+    <li *ngIf="Employee.age > 18">{{Employee.id}} {{Employee.name}} {{Employee.age}}</li>
+</ul>
+<br>
+<h2>List of All Employees</h2>
+<ul *ngFor="let Emp of person">
+    <li>{{Emp.id}}   {{Emp.name}} {{Emp.age}}</li>
+</ul> -->
+
+<div fxLayout="column">
+    <input [(ngModel)]="nm"><br>
+        <div  *ngFor="let Employee of person | filter:nm">
+        <div fxLayout="row" [ngClass]="{'selectedClass':Employee.selected}" (click)="slect(Employee)" style="background: navajowhite; height: 50px;border-bottom: 1px solid silver;" fxLayoutGap="20px" >
+            <div fxFlex="10" style="border-right:1px solid silver;padding:15px">{{Employee.id}} </div>
+            <div fxFlex="45" style="border-right:1px solid silver;padding:15px"> {{Employee.name}}</div>
+            <div fxFlex="45" style="border-right:1px solid silver;padding:15px"> {{Employee.age}}</div>
+        </div>
+</div>
+</div>
