@@ -1,0 +1,52 @@
+Getting Started With Git:
+
+
+Git Is version control Tools means manage a project .
+- we need to install git and set path in envirnment.
+- It's very use full in project when you are working in team.
+basic start:
+
+    you have account on GitHub.com 
+    first create account in github .
+    In GitHub portal there are 2 facilities for creating account and managing project.
+    - if you are student then you create public repository n in this create your own
+    repository. 
+    - after creating repository you have to copy the path of that repository.
+
+    open a command prompt and type the below command
+
+     git remote add remote origin //past name here of your repository.
+
+    git add remote origin https://github.com/kiranlasure/metro-menia.git
+    
+     then After that suppose we make some changes in your project then you can push your project in git 
+     using below command
+
+     git push origin master 
+
+
+    --VIP suppose we want to see what changes made from previous changes to now use below command
+
+    git diff
+
+    If you want to add changes made by you to in staging area then use below command (the difference between push and add is we add code locally and in push we push you code on server)
+
+    git add .
+
+    N finaly the commit command in your project you want to save all changes then use below command
+
+    git commit -m " msg"
+
+    in above command msg is a message to the developer who n what changes are done in this repository
+
+    If You want see what changes are done in project like added component, deleted files then use below command
+
+    git status
+
+    If Accidently you delete any file in you project then we can restore this using 
+
+    restore command
+    git restore  src/app/apicall2/apicall2.component.ts
+
+    in above example the file will be restored
+

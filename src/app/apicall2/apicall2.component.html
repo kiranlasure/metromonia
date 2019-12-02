@@ -9,10 +9,8 @@
 </ul> -->
 
 <div fxLayout="column">
-    <input [(ngModel)]="nm"><br>
-    <br>
-
-<br>    <div  *ngFor="let Employee of person | filter:nm">
+    <input [(ngModel)]="nm"><hr>
+       <div  *ngFor="let Employee of person | filter:nm">
         <div fxLayout="row" [ngClass]="{'selectedClass':Employee.selected}" (click)="slect(Employee)" style="background: navajowhite; height: 50px;border-bottom: 1px solid silver;" fxLayoutGap="20px" >
             <div fxFlex="10" style="border-right:1px solid silver;padding:15px">{{Employee.id}} </div>
             <div fxFlex="45" style="border-right:1px solid silver;padding:15px"> {{Employee.name}}</div>
